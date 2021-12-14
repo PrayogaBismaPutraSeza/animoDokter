@@ -1,8 +1,8 @@
-import 'package:animo/helper/constants.dart';
-import 'package:animo/helper/helperfunctions.dart';
-import 'package:animo/services/database.dart';
-import 'package:animo/view/conversation_screen.dart';
-import 'package:animo/widgets/widget.dart';
+import 'package:animoDoc/helper/constants.dart';
+import 'package:animoDoc/helper/helperfunctions.dart';
+import 'package:animoDoc/services/database.dart';
+import 'package:animoDoc/view/conversation_screen.dart';
+import 'package:animoDoc/widgets/widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   initiateSearch(){
     databaseMethods
-        .getUserByUsername(searchEditingController.text)
+        .getUserByUsername("bagas")
         .then((val){
       setState(() {
         searchSnapshot = val;
@@ -129,17 +129,6 @@ class _SearchScreenState extends State<SearchScreen> {
               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
               child: Row(
                 children: [
-                  Expanded(
-                    child: TextField(
-                      controller: searchEditingController,
-                      style: TextStyle(color: Colors.black),
-                      decoration: InputDecoration(
-                        hintText: "search doctor...",
-                        hintStyle: TextStyle(color: Colors.black),
-                        border: InputBorder.none
-                      ),
-                    )
-                  ),
                   GestureDetector(
                     onTap: (){
                       initiateSearch();

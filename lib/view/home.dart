@@ -1,7 +1,7 @@
-import 'package:animo/helper/authenticate.dart';
-import 'package:animo/services/auth.dart';
-import 'package:animo/view/chatRoomScreen.dart';
-import 'package:animo/view/maps.dart';
+import 'package:animoDoc/helper/authenticate.dart';
+import 'package:animoDoc/services/auth.dart';
+import 'package:animoDoc/view/chatRoomScreen.dart';
+import 'package:animoDoc/view/maps.dart';
 import 'package:flutter/material.dart';
 
 class homeScreen extends StatefulWidget {

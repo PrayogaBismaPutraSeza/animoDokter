@@ -1,9 +1,9 @@
-import 'package:animo/helper/helperfunctions.dart';
-import 'package:animo/services/auth.dart';
-import 'package:animo/services/database.dart';
-import 'package:animo/view/chatRoomScreen.dart';
-import 'package:animo/view/home.dart';
-import 'package:animo/widgets/widget.dart';
+import 'package:animoDoc/helper/helperfunctions.dart';
+import 'package:animoDoc/services/auth.dart';
+import 'package:animoDoc/services/database.dart';
+import 'package:animoDoc/view/chatRoomScreen.dart';
+import 'package:animoDoc/view/home.dart';
+import 'package:animoDoc/widgets/widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

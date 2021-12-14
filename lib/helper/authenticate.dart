@@ -1,5 +1,5 @@
-import 'package:animo/view/signin.dart';
-import 'package:animo/view/singup.dart';
+import 'package:animoDoc/view/signin.dart';
+import 'package:animoDoc/view/singup.dart';
 import 'package:flutter/material.dart';
 
 class Authenticate extends StatefulWidget {

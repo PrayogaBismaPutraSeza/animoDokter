@@ -1,6 +1,6 @@
-import 'package:animo/helper/constants.dart';
-import 'package:animo/services/database.dart';
-import 'package:animo/widgets/widget.dart';
+import 'package:animoDoc/helper/constants.dart';
+import 'package:animoDoc/services/database.dart';
+import 'package:animoDoc/widgets/widget.dart';
 import 'package:flutter/material.dart';
 
 class ConversationScreen extends StatefulWidget {

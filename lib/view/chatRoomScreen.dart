@@ -1,12 +1,12 @@
-import 'package:animo/helper/authenticate.dart';
-import 'package:animo/helper/constants.dart';
-import 'package:animo/helper/helperfunctions.dart';
-import 'package:animo/services/auth.dart';
-import 'package:animo/services/database.dart';
-import 'package:animo/view/conversation_screen.dart';
-import 'package:animo/view/search.dart';
-import 'package:animo/view/signin.dart';
-import 'package:animo/widgets/widget.dart';
+import 'package:animoDoc/helper/authenticate.dart';
+import 'package:animoDoc/helper/constants.dart';
+import 'package:animoDoc/helper/helperfunctions.dart';
+import 'package:animoDoc/services/auth.dart';
+import 'package:animoDoc/services/database.dart';
+import 'package:animoDoc/view/conversation_screen.dart';
+import 'package:animoDoc/view/search.dart';
+import 'package:animoDoc/view/signin.dart';
+import 'package:animoDoc/widgets/widget.dart';
 import 'package:flutter/material.dart';
 
 class ChatRoom extends StatefulWidget {
@@ -76,14 +76,7 @@ class _ChatRoomState extends State<ChatRoom> {
         ],
       ),
       body: chatRoomList(),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.search),
-        onPressed: (){
-          Navigator.push(context, MaterialPageRoute(
-            builder: (context) => SearchScreen()
-          ));
-        },
-      ),
+
     );
   }
 }

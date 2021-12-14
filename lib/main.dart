@@ -1,5 +1,5 @@
-import 'package:animo/helper/helperfunctions.dart';
-import 'package:animo/view/home.dart';
+import 'package:animoDoc/helper/helperfunctions.dart';
+import 'package:animoDoc/view/home.dart';
 import 'package:flutter/material.dart';
 import 'helper/authenticate.dart';
 

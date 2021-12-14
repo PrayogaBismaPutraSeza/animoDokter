@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:animo/modul/user.dart';
+import 'package:animoDoc/modul/user.dart';
 
 class AuthMethods{
   final FirebaseAuth _auth = FirebaseAuth.instance;

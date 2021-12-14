@@ -1,10 +1,10 @@
-import 'package:animo/helper/helperfunctions.dart';
-import 'package:animo/services/auth.dart';
-import 'package:animo/services/database.dart';
-import 'package:animo/view/chatRoomScreen.dart';
-import 'package:animo/view/home.dart';
-import 'package:animo/view/search.dart';
-import 'package:animo/widgets/widget.dart';
+import 'package:animoDoc/helper/helperfunctions.dart';
+import 'package:animoDoc/services/auth.dart';
+import 'package:animoDoc/services/database.dart';
+import 'package:animoDoc/view/chatRoomScreen.dart';
+import 'package:animoDoc/view/home.dart';
+import 'package:animoDoc/view/search.dart';
+import 'package:animoDoc/widgets/widget.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +48,7 @@ class _SignInState extends State<SignIn> {
               userInfoSnapshot.documents[0].data["email"]);
 
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => homeScreen()));
+              context, MaterialPageRoute(builder: (context) => ChatRoom()));
         }else{
           setState(() {
             isLoading = false;
@@ -116,24 +116,7 @@ class _SignInState extends State<SignIn> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ForgotPassword()));
-                        },
-                        child: Container(
-                          alignment: Alignment.centerRight,
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16,vertical: 8),
-                            child: Text("Forgot Password?", style: TextStyle(
-                            color: Colors.blue,
-                            fontSize: 16,
-                          ),),
-                          ),
-                        ),
-                      ),
+
                     ],
                   ),
                   SizedBox(height: 8,),
@@ -173,25 +156,7 @@ class _SignInState extends State<SignIn> {
                     ),),
                   ),
                   SizedBox(height: 16,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text("Don't have account? ", style: mediumTextStyle(),),
-                      GestureDetector(
-                        onTap: (){
-                          widget.toggle();
-                        },
-                        child: Container(
-                          padding: EdgeInsets.symmetric(vertical: 8),
-                          child: Text("Register now",style: TextStyle(
-                            color: Colors.blue,
-                            fontSize: 17,
-                            decoration: TextDecoration.underline
-                          ),),
-                        ),
-                      ),
-                    ],
-                  ),
+
                   SizedBox(height: 50,),
                 ],
               ),

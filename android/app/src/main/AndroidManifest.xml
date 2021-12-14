@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.animo">
    <application
-        android:label="animo"
+        android:label="animoDoc"
         android:icon="@mipmap/ic_launcher">
        <meta-data android:name='com.google.android.geo.API_KEY'
            android:value='AIzaSyAnB-sbJVRLXvaRXP3tbnSel6rbJK0uvlk'></meta-data>
