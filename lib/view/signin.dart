@@ -138,26 +138,6 @@ class _SignInState extends State<SignIn> {
                       child: Text("Sign In", style: simpleTextStyle(),),
                     ),
                   ),
-                  SizedBox(height: 16,),
-                  Container(
-                    alignment: Alignment.center,
-                    width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.symmetric(vertical: 20),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.white,
-                        width: 2,
-                      ),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: Text("Sign In with Google", style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),),
-                  ),
-                  SizedBox(height: 16,),
-
-                  SizedBox(height: 50,),
                 ],
               ),
             ),
