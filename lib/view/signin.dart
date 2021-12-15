@@ -138,6 +138,7 @@ class _SignInState extends State<SignIn> {
                       child: Text("Sign In", style: simpleTextStyle(),),
                     ),
                   ),
+                  SizedBox(height: 50,),
                 ],
               ),
             ),
